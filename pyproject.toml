@@ -16,12 +16,5 @@ dependencies = [
     "polars>=1.31.0",
     "rich>=14.0.0",
     "scipy>=1.16.0",
-    "toolplot",
-    "toolstr",
-    "tooltime",
 ]
 
-[tool.uv.sources]
-tooltime = { path = "../tooltime", editable = true }
-toolstr = { path = "../toolstr", editable = true }
-toolplot = { path = "../toolplot", editable = true }
