@@ -1349,6 +1349,9 @@ dependencies = [
     { name = "polars" },
     { name = "rich" },
     { name = "scipy" },
+    { name = "toolplot" },
+    { name = "toolstr" },
+    { name = "tooltime" },
 ]
 
 [package.metadata]
@@ -1364,6 +1367,9 @@ requires-dist = [
     { name = "polars", specifier = ">=1.31.0" },
     { name = "rich", specifier = ">=14.0.0" },
     { name = "scipy", specifier = ">=1.16.0" },
+    { name = "toolplot" },
+    { name = "toolstr" },
+    { name = "tooltime" },
 ]
 
 [[package]]
@@ -3152,6 +3158,47 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/a4/d2/faa1acac3f96a7427866e94ed4289949b2524f0c1878512516567d80563c/tokenizers-0.21.2-cp39-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:106746e8aa9014a12109e58d540ad5465b4c183768ea96c03cbc24c44d329958", size = 9470074 },
     { url = "https://files.pythonhosted.org/packages/d8/a5/896e1ef0707212745ae9f37e84c7d50269411aef2e9ccd0de63623feecdf/tokenizers-0.21.2-cp39-abi3-win32.whl", hash = "sha256:cabda5a6d15d620b6dfe711e1af52205266d05b379ea85a8a301b3593c60e962", size = 2330115 },
     { url = "https://files.pythonhosted.org/packages/13/c3/cc2755ee10be859c4338c962a35b9a663788c0c0b50c0bdd8078fb6870cf/tokenizers-0.21.2-cp39-abi3-win_amd64.whl", hash = "sha256:58747bb898acdb1007f37a7bbe614346e98dc28708ffb66a3fd50ce169ac6c98", size = 2509918 },
+]
+
+[[package]]
+name = "toolplot"
+version = "0.3.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "toolstr" },
+    { name = "tooltime" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1e/ff/3c3ecc8c09a1d354745748c0135eea3b7e53322556403b1dd0353f5ae763/toolplot-0.3.5.tar.gz", hash = "sha256:878832cdf15931de1dd358d4e1558886affa2472ebb98d606bb5773746d23bf7", size = 7600 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/44/7b/9976b9a00d3fdb058ac177b4a7c7237c6806b748536295519601f65991dc/toolplot-0.3.5-py3-none-any.whl", hash = "sha256:a9aaf8d546db6683d3bd7682e3b0783c1f83ffa38c4538d857bb62e11d4ad1df", size = 10065 },
+]
+
+[[package]]
+name = "toolstr"
+version = "0.9.11"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "tooltime" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/d0/92/fc802af1c0f9ebcd384a6d77a32d12c24676b9c9b621014afd74fdeb9a47/toolstr-0.9.11.tar.gz", hash = "sha256:8ebdf605d10aa40bba5512f08dcec584204077b89d9b118be4891ea53fe5a1a9", size = 93792 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/08/c4/823c9371028d93f4095bf723ee676e684ab363b663404fa92a1609d809f3/toolstr-0.9.11-py3-none-any.whl", hash = "sha256:d695f15848b7079c3e2b8456437223695c2cb1be9b42e0a7df90ea328c969134", size = 41309 },
+]
+
+[[package]]
+name = "tooltime"
+version = "0.3.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/34/9f/852bb1dc6598d66a313565cfc1b7bafa95a8f5328a3b45710248a1c2e20e/tooltime-0.3.4.tar.gz", hash = "sha256:ae02484a8b4a0cd3920809a9f26d5ddef1c25c8ce9a77278e1b1effe302f8d9a", size = 39351 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/81/10/70addb673b345d8beea45be41f30c433b5a301da2bb715456fc6a8945197/tooltime-0.3.4-py3-none-any.whl", hash = "sha256:081e9b64848a9c092e6f7ae45715dc9f4d917506484405b726118707cea455c2", size = 43015 },
 ]
 
 [[package]]
